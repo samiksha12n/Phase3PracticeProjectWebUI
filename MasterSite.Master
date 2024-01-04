@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSite.master.cs" Inherits="PracticeProjectUIWebForms.MasterSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="OurStyle.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            border: 2px solid red;
+        }
+        .auto-style2 {
+            width: 534px;
+        }
+        .auto-style3 {
+            width: 641px;
+        }
+        .auto-style4 {
+            width: 810px;
+            height: 374px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel"><h1>Welcome to Rainbow School</h1>
+            <table>
+             <tr>
+     <td>
+         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+     </td>
+ 
+     <td>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+     </td>
+ </tr>
+ </table>
+        </div>
+        <div class="leftPanel"><h1>Activities</h1>
+            <p>
+ 
+             <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/p1.jpg" CssClass="auto-style1" Width="277px"/>
+ <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/p2.jpg" CssClass="auto-style1" Height="205px" Width="275px"/>
+                </p>
+            
+            </div>
+        <div class="centerPanel"><h1>About the school</h1>
+            <table class="auto-style4">
+                <tr>
+                    <td class="auto-style3">Do you want to know about our Staff?</td>
+                    <td class="auto-style2">
+                        <asp:Button ID="Button1" runat="server" BackColor="#0099FF" ForeColor="Black" Text="Click here" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">Our Students Achievements to know more </td>
+                    <td class="auto-style2">
+                        <asp:Button ID="Button2" runat="server" BackColor="#0099FF" ForeColor="Black" Text="Click here" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+</body>
+</html>
